@@ -1,0 +1,23 @@
+Subject: 您的账号启用了两步验证功能
+From: Google <no-reply@accounts.google.com>
+
+[image: Google]
+您的账号启用了两步验证功能
+
+
+yifanwhu523@gmail.com
+
+您的 Google 账号 yifanwhu523@gmail.com
+现已开启两步验证。在新设备或不受信任的设备上登录账号时，您需要完成第二重身份 
+验证以验证您的身份。
+
+*避免您无法访问自己的账号！*
+您可以添加备用电话号码或获取备用验证码，以便在无法完成第二重身份验证时使用。
+您可以查看两步验证设置
+<https://accounts.google.com/AccountChooser?Email=yifanwhu523@gmail.com&continue=https://myaccount.google.com/signinoptions/two-step-verification?rfn%3D16%26rfnc%3D1%26eid%3D-2880776277785076335%26et%3D0>
+以进行更改。
+您也可以访问以下网址查看安全性活动：
+https://myaccount.google.com/notifications
+我们向您发送这封电子邮件，目的是让您了解关于您的 Google 账号和服务的重大变 
+化。
+© 2024 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA

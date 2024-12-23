@@ -1,0 +1,1 @@
+Iterate through each file in the specified email folder to read the content of each file

@@ -1,0 +1,20 @@
+Classification Results:
+1. Email 1:
+   Classification Label: Music Society Recruitment
+   Reason: The email is recruiting new executive members for the Music Society, emphasizing the opportunity to find bandmates, meet new friends, and participate in music-related activities.
+
+2. Email 2:
+   Classification Label: Red Hat Training Course
+   Reason: The email provides details about a Red Hat System Administration training course happening at The University of Hong Kong in January 2025, including the venue, date, time, and language of the course.
+
+3. Email 3:
+   Classification Label: Google Account Verification
+   Reason: The email is a verification message from Google regarding the activation of two-step verification for the recipient's Google account, providing instructions and a link for account security settings.
+
+4. Email 4:
+   Classification Label: HKU-BICI Joint Programme
+   Reason: The email announces the HKU-BICI Entrepreneurship Joint Educational Placement Programme for PhD, highlighting the opportunity for practical entrepreneurship training, research commercialization skills development, and scholarship funding.
+
+5. Email 5:
+   Classification Label: Unknown
+   Reason: The content of this email is not clear from the provided snippet, as it only contains the subject "virus.txt" and an email address without further context.

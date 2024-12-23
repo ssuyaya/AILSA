@@ -1,0 +1,1 @@
+Fetch the first 5 emails in the mailbox with the specified email address and password, and save them to the specified output folder

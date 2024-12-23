@@ -1,0 +1,17 @@
+Subject: 安全提醒
+From: Google <no-reply@accounts.google.com>
+
+[image: Google]
+您的账号中添加了一个新的通行密钥
+
+
+yifanwhu523@gmail.com
+如果您没有添加过通行密钥，则表示可能有人在使用您的账号。请立即检查您的账号并 
+确保其安全。
+查看活动
+<https://accounts.google.com/AccountChooser?Email=yifanwhu523@gmail.com&continue=https://myaccount.google.com/alert/nt/1732268554586?rfn%3D364%26rfnc%3D1%26eid%3D9025336808480693815%26et%3D0>
+您也可以访问以下网址查看安全性活动：
+https://myaccount.google.com/notifications
+我们向您发送这封电子邮件，目的是让您了解关于您的 Google 账号和服务的重大变 
+化。
+© 2024 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA

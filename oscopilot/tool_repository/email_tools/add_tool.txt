@@ -1,0 +1,35 @@
+python3 oscopilot/tool_repository/manager/tool_manager.py --add --tool_name [tool_name] --tool_path [tool_path]
+
+python3 oscopilot/tool_repository/manager/tool_manager.py --add --tool_name email_fetcher --tool_path oscopilot/tool_repository/email_tools/email_fetcher.py
+
+python3 oscopilot/tool_repository/manager/tool_manager.py --add --tool_name email_classifier --tool_path oscopilot/tool_repository/email_tools/email_classifier.py
+
+python3 quick_start.py --query "You need to do some tasks related to excel manipulation.\n My sheet records data from an experiment where one hanging block (m2) drags a block (m1=0.75 kg) on a frictionless table via a rope around a frictionless and massless pulley. It has a sheet called Sheet1. \n Your task is: Fill out the rest rows in column B using the formula in B2. Create a scatter chart in Sheet1 with acceleration on the y-axis and the hanging mass on the x-axis. Add the corresponding column headers as the axis labels. \n You should complete the task and save the result directly in this excel file." --query_file_path "oscopilot/emails"
+
+python3 quick_start.py --query "You need to perform some tasks related to mail operations. \n I have some emails in txt format in my working directory. \n Your task is: extract the contents of the mails in a txt file and categorize each mail with labels. \n You should complete the task and save the result directly in the working directory." --query_file_path "oscopilot/emails"
+
+python3 quick_start.py --query "_SYSTEM_EMAIL_CLASSIFY_PROMPT:You are an expert email categorizing AI model that can understand and classify the user's emails based on their intentions and preferences.\n I will provide you with details about the user, including their persona, preferences, and what they value in emails, along with a dictionary mapping labels to their descriptions or use cases. Based on this information, you need to classify a given email and return an appropriate label and reason.\n Please analyze the user's information and the label the label mapping to determine the most suitable category for the email content provided. If you find an appropriate label, return it along with a concise reason for the classification. If no label is suitable, provide an empty string instead.You should only respond with the format as described below:\n 1. First, understand the user's preferences and the purpose of each label in the mapping.\n 2. Read the email content thoroughly and assess it against the user's criteria and label descriptions.\n 3. Determine the most appropriate label for the email and provide a reason for your classification.\n 4. Output Format: Your final output should be a JSON object containing the label and the reason, structured as follows:
+"label": <one of the labels specified in the label_mapping> ,"reason": <why the given email was classified as the label category>
+And you should also follow the following criteria:
+1. Ensure that the label you choose aligns with the user's intentions and the provided label descriptions.
+2. If no suitable label is found, be sure to return an empty string for the label, rather than forcing an unsuitable label.
+
+Now you will be provided with the following information for evaluation:
+''',
+'_USER_EMAIL_CLASSIFY_PROMPT': '''
+User's information and email content are as follows:
+User Information: I am a Software Engineering Student and I am right now on the lookout for work opportunities and advancing my career.
+        I want my mails to be focused on that goal and streamlined, I really don't want to see spammy promotional mails.   
+Label Mapping: 
+            "Job": "any work related email should go here",
+            "Personal": "any personal communication from friends or family",
+            "Trashy": "All Promotional Emails and Spam",
+            "Bills": "All invoices or finance related things",
+Email Content: mail_body The content of the message is any text file located in the working_dir/emails directory.
+Please classify the email content into a JSON format as specified above." --query_file_path "working_dir/emails"
+
+python3 oscopilot/tool_repository/manager/tool_manager.py --delete --tool_name extract_email_contents
+
+python3 quick_start.py --query "You need to perform some tasks related to mail operations. \n I have some emails in txt format in my working directory. \n Your task is: extract the contents of the mails in a txt file and categorize each mail with labels. \n You should complete the task and save the result directly in the working directory." --query_file_path "oscopilot/emails"
+
+python3 quick_start.py --query "You need to perform some tasks related to classifying emails. \n I have some email content in txt format. \n Your task is: read the content of the emails in the txt file and categorize each email using tags. \n And tell me the labels and reasons for categorizing each email. \n You should complete the task and save the results directly in the catalog." --query_file_path "working_dir/emails" --working_dir "working_dir/output"
